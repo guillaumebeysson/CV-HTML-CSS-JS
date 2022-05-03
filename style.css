@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+	word-break: break-word;
+}
+body {
+	background-color: #2a2a2a;
+}
+main {
+	display: flex;
+	flex-direction: row;
+	width: 1000px;
+	margin: 0 auto;
+	transition: all 0.5s;
+}
+/**************** BANNER LEFT ************************/
+.bannerLeft {
+	width: 300px;
+	margin: 10px;
+	padding: 10px;
+	background-color: #0d3e58;
+	color: white;
+	transition: all 0.25s;
+}
+.bannerLeft.scroll {
+	background-color: #fafafa;
+	color: #2a2a2a;
+}
+.bannerRight.scroll {
+	background-color: #0d3e58;
+	color: #fafafa;
+}
+.bannerLeft #presentation img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	display: block;
+	margin: 10px auto;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+}
+.imageAndLinks {
+	height: 230px;
+}
+#linkImage {
+	width: 200px;
+}
+#linkImage a {
+	position: relative;
+	top: -33px;
+	right: -65px;
+	z-index: -1;
+	font-size: 40px;
+	color: #fafafa;
+	transition: all 0.3s ease-in-out;
+}
+#linkImage.scroll {
+	color: #0d3e58;
+}
+.bannerLeft #presentation:hover img {
+	border-radius: 0;
+	/* filter: grayscale(100%); */
+}
+.bannerLeft #presentation:hover a {
+	z-index: 1;
+}
+
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: large;
+}
+h1.scroll {
+	color: #0d3e58;
+}
+h2.scroll {
+	color: #0d3e58;
+}
+h2 {
+	text-align: center;
+	font-weight: 300;
+}
+hr {
+	color: #4dc0e2;
+	margin-top: 10px;
+}
+.blocContactFormationLangues {
+	margin: 20px 0;
+}
+#contact {
+	display: flex;
+	flex-direction: column;
+}
+#contact p {
+	font-size: 14px;
+	padding: 5px 0;
+}
+#formations {
+	display: flex;
+	flex-direction: column;
+}
+.formationName {
+	display: flex;
+	flex-direction: column;
+	margin: 5px 0;
+}
+.formationName p:last-child {
+	font-weight: 100;
+}
+.formationName .yearBlue {
+	color: #4dc0e2;
+}
+.h3Left {
+	text-transform: uppercase;
+	padding: 5px 0;
+}
+#h3LeftContact.scroll {
+	color: #0d3e58;
+}
+#h3LeftFormation.scroll {
+	color: #0d3e58;
+}
+#h3LeftLangues.scroll {
+	color: #0d3e58;
+}
+#h3RightProfil.scroll {
+	color: #fafafa;
+}
+#h3RightExperiences.scroll {
+	color: #fafafa;
+}
+#h3RightLangages.scroll {
+	color: #fafafa;
+}
+#h3RightQualites.scroll {
+	color: #fafafa;
+}
+#h3RightInterets.scroll {
+	color: #fafafa;
+}
+.blockLangue {
+	padding: 15px 0;
+}
+/**************** BANNER RIGHT ************************/
+.bannerRight {
+	background-color: #fafafa;
+	width: 700px;
+	margin: 10px;
+	padding: 10px;
+	transition: all 0.5s ease-in-out;
+}
+.h3Right {
+	color: #0d3e58;
+	margin: 0 0 20px 0;
+	text-transform: uppercase;
+	padding: 5px 0;
+}
+.h3Right.scroll {
+	color: #fafafa;
+}
+.blocAllRight {
+	padding: 10px;
+}
+#profil p {
+	margin: 15px 0;
+}
+.blockExperience {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+.blockExperienceLeft {
+	width: 300px;
+	color: grey;
+	font-weight: 500;
+}
+.blockExperienceRight {
+	width: 600px;
+}
+.blockExperienceRight p:first-child {
+	color: #4dc0e2;
+	font-weight: bold;
+}
+.langage {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: grey;
+	font-weight: 600;
+	margin: 10px 0;
+}
+/************************* PROGRESS BAR **********************************/
+.progress {
+	position: relative;
+	width: 30em;
+	height: 30px;
+	background: #9cbab4;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.progress_lang {
+	position: relative;
+	width: 250px;
+	height: 30px;
+	background: #9cbab4;
+	border-radius: 5px;
+	overflow: hidden;
+}
+#progress__fill_francais {
+	width: 90%;
+	height: 100%;
+	background: #4dc0e2;
+	transition: all 0.2s;
+}
+#progress__fill_anglais {
+	width: 70%;
+	height: 100%;
+	background: #4dc0e2;
+	transition: all 0.2s;
+}
+#progress__fill_allemand {
+	width: 40%;
+	height: 100%;
+	background: #4dc0e2;
+	transition: all 0.2s;
+}
+#progress__fill_html {
+	width: 90%;
+	height: 100%;
+	background: #4dc0e2;
+	transition: all 0.2s;
+}
+#progress__fill_css {
+	width: 90%;
+	height: 100%;
+	background: #4dc0e2;
+	transition: all 0.2s;
+}
+#progress__fill_javascript {
+	width: 70%;
+	height: 100%;
+	background: #4dc0e2;
+	transition: all 0.2s;
+}
+#progress__fill_angular {
+	width: 70%;
+	height: 100%;
+	background: #4dc0e2;
+	transition: all 0.2s;
+}
+#progress__fill_php {
+	width: 50%;
+	height: 100%;
+	background: #4dc0e2;
+	transition: all 0.2s;
+}
+#progress__fill_symfony {
+	width: 30%;
+	height: 100%;
+	background: #4dc0e2;
+	transition: all 0.2s;
+}
+.progress__text {
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	transform: translateY(-50%);
+	font: bold 14px "Quicksand", sans-serif;
+	color: #ffffff;
+}
+/***************************************************************/
+.qualitesAll {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.qualitesAll p {
+	padding: 5px 40px;
+}
+.interetsAll {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.interetsAll p {
+	width: 170px;
+	padding: 5px 0;
+}
+.interetsAll i {
+	color: #4dc0e2;
+}
+/**************************** h3Btn ***********************************/
+.h3Btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.h3Btn button {
+	border: none;
+	background-color: #fafafa;
+	color: #0d3e58;
+	font-size: 20px;
+	height: 45px;
+}
+/*************************** EYEMDP *******************************/
+#mdpEye {
+	display: flex;
+	align-items: center;
+}
+#togglePassword {
+	margin-left: 10px;
+	cursor: pointer;
+}
+/****************** MEDIA ************************************/
+@media (max-width: 1000px) {
+	main {
+		flex-direction: column;
+		width: 100%;
+	}
+	.bannerLeft {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+	.bannerRight {
+		width: 100%;
+		margin: 0;
+	}
+	.blocAllRight {
+		width: 100%;
+	}
+	.langage {
+		display: flex;
+		flex-direction: column;
+	}
+	.progress {
+		width: 100%;
+	}
+	.blockExperienceLeft {
+		padding-right: 5px;
+	}
+	#linkImage a {
+		top: -33px;
+		right: -48px;
+	}
+	#linkImage a {
+		z-index: 1;
+		color: #8d8d8d;
+	}
+}
+@media (max-width: 627px) {
+	.qualitesAll {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.interetsAll {
+		flex-direction: column;
+		align-items: center;
+	}
+	.interetsAll p {
+		text-align: center;
+	}
+}
